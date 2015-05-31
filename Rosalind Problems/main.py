@@ -1,16 +1,11 @@
-__author__ = 'Graham'
-import Test
-from Bio import Seq
-from Bio.Alphabet import IUPAC
+import sys
+sys.path.append("/Users/Graham/Desktop/biopython")
+from Bio.Seq import Seq
 from Bio import SeqIO
+from Bio import Alphabet
 
-infile = list(SeqIO.parse('rosalind_grph.txt', 'fasta'))
-list_edges = []
-for fragment in infile:
-    for other_fragment in infile:
-        if fragment.seq[-3:] == other_fragment.seq[0:3] and fragment != other_fragment:
-            list_edges.append(str(fragment.id + ' ' + other_fragment.id))
-
-for entry in list_edges:
-        print entry
-
+infile = open(raw_input("Enter File Name: "),'r')
+output = open(output.txt,'w')
+output.write()
+output.close()
+infile.close()
